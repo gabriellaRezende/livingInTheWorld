@@ -43,6 +43,7 @@ CREATE TABLE `processo` (
 CREATE TABLE `user` (
   `user_id` int(11) NOT NULL,
   `name` varchar(100) NOT NULL,
+  `apelido` varchar(100) NOT NULL,
   `email` varchar(100) NOT NULL,
   `psw` varchar(10) NOT NULL,
   `dt_nascimento` date NOT NULL,
