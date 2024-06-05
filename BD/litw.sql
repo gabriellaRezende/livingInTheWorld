@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: May 29, 2024 at 11:40 AM
+-- Generation Time: Jun 05, 2024 at 10:55 AM
 -- Server version: 5.7.24
 -- PHP Version: 8.0.1
 
@@ -24,13 +24,26 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `category`
+--
+
+CREATE TABLE `category` (
+  `id_category` int(11) NOT NULL,
+  `name` text NOT NULL,
+  `description` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `processo`
 --
 
 CREATE TABLE `processo` (
-  `name` int(11) NOT NULL,
+  `name` text NOT NULL,
   `description` text NOT NULL,
-  `documents` blob NOT NULL,
+  `price` decimal(6,2) NOT NULL,
+  `id_category` int(11) NOT NULL,
   `id_process` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -47,7 +60,7 @@ CREATE TABLE `user` (
   `psw` varchar(10) NOT NULL,
   `dt_nascimento` date NOT NULL,
   `endereco` varchar(100) NOT NULL,
-  `genero` tinyint(1) NOT NULL
+  `genero` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -57,11 +70,12 @@ CREATE TABLE `user` (
 --
 
 CREATE TABLE `user_docs` (
-  `user_id` int(11) NOT NULL,
-  `id_process` int(11) NOT NULL,
-  `name_doc` int(11) NOT NULL,
-  `dt_create` int(11) NOT NULL,
-  `link` text NOT NULL
+  `id_userDocs` int(11) NOT NULL,
+  `id_processUser` int(11) NOT NULL,
+  `name_doc` text NOT NULL,
+  `dt_create` date NOT NULL,
+  `link` text NOT NULL,
+  `description` text
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -71,14 +85,23 @@ CREATE TABLE `user_docs` (
 --
 
 CREATE TABLE `user_processo` (
-  `user_id` int(11) NOT NULL,
+  `id_user` int(11) NOT NULL,
   `id_process` int(11) NOT NULL,
-  `status` varchar(100) NOT NULL
+  `status` varchar(100) NOT NULL,
+  `id_processUser` int(11) NOT NULL,
+  `dt_create` date NOT NULL,
+  `dt_update` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `category`
+--
+ALTER TABLE `category`
+  ADD PRIMARY KEY (`id_category`);
 
 --
 -- Indexes for table `processo`
@@ -93,8 +116,26 @@ ALTER TABLE `user`
   ADD PRIMARY KEY (`user_id`);
 
 --
+-- Indexes for table `user_docs`
+--
+ALTER TABLE `user_docs`
+  ADD PRIMARY KEY (`id_userDocs`);
+
+--
+-- Indexes for table `user_processo`
+--
+ALTER TABLE `user_processo`
+  ADD PRIMARY KEY (`id_processUser`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `category`
+--
+ALTER TABLE `category`
+  MODIFY `id_category` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `processo`
@@ -107,6 +148,18 @@ ALTER TABLE `processo`
 --
 ALTER TABLE `user`
   MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `user_docs`
+--
+ALTER TABLE `user_docs`
+  MODIFY `id_userDocs` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `user_processo`
+--
+ALTER TABLE `user_processo`
+  MODIFY `id_processUser` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
