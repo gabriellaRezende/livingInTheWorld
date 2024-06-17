@@ -2,19 +2,22 @@
 
 
 
-
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">
+  <div class="container-fluid" style="">
+    <a class="navbar-brand me-4" href="#">
       <img src="./images/profile cat.jpg" alt="Cidadania Matos" width="30" height="30">
+      Cidadania Matos
     </a>
     <button class="navbar-toggler border-0 " style="" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <i class="bi bi-list"></i>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+          <a class="nav-link h1" style="" aria-current="page" href="#">Home</a>
+        </li>
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">Sobre</a>
+          <a class="nav-link" aria-current="page" href="#">Sobre Nós</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Serviços</a>

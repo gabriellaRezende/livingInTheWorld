@@ -1,0 +1,30 @@
+@font-face {
+    font-family: myFont;
+    src: url(./);
+}
+
+:root {
+    --cor-primaria: #28306E; 
+    --cor-secundaria: #9E9E9E;
+    --cor-neutral900: #263238;
+    --cor-neutral800: #37474F; 
+    --cor-neutral700: #455A64;
+    --cor-neutral600: #546E7A;
+    --cor-neutral500: #607D8B;
+    --cor-neutral400: #78909C;
+    --cor-neutral300: #90A4AE;
+    --cor-neutral200: #B0BEC5;
+    --cor-neutral100: #CFD8DC;
+    --cor-neutral50: #ECEFF1;
+    --cor-semanticsucess: #1BC47E;
+    --cor-semanticerro: #FF5252;
+    --cor-semanticinfo: #40C3FF;
+    --cor-semanticwarning: #FFC107;
+    --cor-Bginterface: #FCF7F2;
+    --cor-Bgcomponente: #FFFF;
+    --font-
+}
+
+.h1{
+    font-weight: 400;
+}
