@@ -24,3 +24,6 @@
     --cor-Bgcomponente: #FFFF;
 }
 
+body{
+    background-color: var(--cor-Bginterface);
+}
