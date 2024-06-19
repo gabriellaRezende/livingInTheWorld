@@ -17,7 +17,7 @@
           <a class="nav-link h1" style="" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">Sobre Nós</a>
+          <a class="nav-link" aria-current="page" href="about.php">Sobre Nós</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Serviços</a>
