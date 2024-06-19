@@ -2,10 +2,10 @@
 
 
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg">
   <div class="container-fluid" style="">
     <a class="navbar-brand me-4" href="#">
-      <img src="./images/profile cat.jpg" alt="Cidadania Matos" width="30" height="30">
+      <img src="./images/logo CR.svg" alt="Cidadania Matos" width="30" height="30">
       Cidadania Matos
     </a>
     <button class="navbar-toggler border-0 " style="" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
