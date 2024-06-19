@@ -39,7 +39,7 @@
       </ul>
 
       <div class="d-flex" role="search">
-        <button class="btn" type="submit">Login</button>
+      <a href="login.php" class="btn">Login</a>
         <button type="button" class="btn"> <i class="bi bi-person-circle"></i> </button>
       </div>
     </div>
