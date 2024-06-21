@@ -2,7 +2,7 @@
 
 
 
-<nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-expand-lg fixed-top mb-5" style="background-color: var(--cor-Bgcomponente)";>
   <div class="container-fluid" style="">
     <a class="navbar-brand me-4" href="#">
       <img src="./images/logo CR.svg" alt="Cidadania Matos" width="30" height="30">

@@ -15,15 +15,28 @@
         filter: drop-shadow(0.35rem 0.35rem 0.4rem rgb(0,0,0,0.5));
     };
 
+    .card-prof{
+        width: ;
+    }
+
+    .mg-infos{
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
     </style>
 </head>
 
 
 
-<body>
+<body class="vh-100 d-flex flex-column justify-content-between align-itens-center">
+
+<div>
     <!-- header -->
     <?php include "header.php"; ?>
+</div>
+    
 
+    <div class="mg-infos">
     <div id="carouselExample" class="carousel slide">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -44,9 +57,9 @@
                 </div>
             </div>
             <div class="carousel-item ">
-                <div class="container col-lg-8 px-4" style="background-color: var(--cor-Bgcomponente);">
-                    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-                        <div class="col-12 col-lg-6 p-0">
+                <div class="container col-lg-8 px-4 rounded-2 card-prof" style="background-color: var(--cor-Bgcomponente);">
+                    <div class="row flex-lg-row-reverse align-items-center">
+                        <div class="col-12 col-lg-6 pt-3">
                             <img src="./images/Irmã_nova_matos-removebgrop.png" class="d-block mx-lg-auto img-fluid prof-img" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
                         </div>
                         <div class="col-lg-6">
@@ -71,9 +84,15 @@
             <span class="visually-hidden">Next</span>
         </button>
 
+    </div>
+    </div>
+    
 
-        <!-- Footer -->
+<div>
+    <!-- Footer -->
         <?php include "footer.php"; ?>
+</div>
+        
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
