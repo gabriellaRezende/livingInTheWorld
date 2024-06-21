@@ -16,7 +16,8 @@
     };
 
     .card-prof{
-        width: ;
+        width: auto; 
+        /*não consigo entender pq desconfigura se eu tiro*/
     }
 
     .mg-infos{
@@ -57,7 +58,7 @@
                 </div>
             </div>
             <div class="carousel-item ">
-                <div class="container col-lg-8 px-4 rounded-2 card-prof" style="background-color: var(--cor-Bgcomponente);">
+                <div class="container col-lg-8 px-4 rounded-2" style="background-color: var(--cor-Bgcomponente);">
                     <div class="row flex-lg-row-reverse align-items-center">
                         <div class="col-12 col-lg-6 pt-3">
                             <img src="./images/Irmã_nova_matos-removebgrop.png" class="d-block mx-lg-auto img-fluid prof-img" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
@@ -85,7 +86,7 @@
         </button>
 
     </div>
-    </div>
+</div>
     
 
 <div>
