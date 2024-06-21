@@ -9,7 +9,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./CSS/styles.css">
 
+    <style>
+
+    .prof-img{
+        filter: drop-shadow(0.35rem 0.35rem 0.4rem rgb(0,0,0,0.5));
+    };
+
+    </style>
 </head>
+
+
 
 <body>
     <!-- header -->
@@ -37,13 +46,13 @@
             <div class="carousel-item ">
                 <div class="container col-lg-8 px-4" style="background-color: var(--cor-Bgcomponente);">
                     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-                        <div class="col-10 col-sm-8 col-lg-6">
-                            <img src="./images/Irmã_nova_matos-removebg.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                        <div class="col-12 col-lg-6 p-0">
+                            <img src="./images/Irmã_nova_matos-removebgrop.png" class="d-block mx-lg-auto img-fluid prof-img" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
                         </div>
                         <div class="col-lg-6">
                             <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Nome da Pessoa, 27 anos</h1>
-                            <p class="lead">Na minha função, eu realizo uma série de atividades que visam facilitar o processo de obtenção da cidadania portuguesa para nossos clientes. Uma das minhas principais responsabilidades é conduzir pesquisas genealógicas detalhadas. Isso envolve investigar e confirmar a elegibilidade dos clientes para a cidadania portuguesa com base em suas origens familiares. Utilizo diversos recursos e bancos de dados para rastrear documentos históricos e estabelecer as conexões necessárias.</p>
-                            <p class="lead">Além disso, sou responsável pela preparação e submissão de toda a documentação necessária para os processos de naturalização e processos de  Isso inclui a coleta de certidões de nascimento, casamento, antecedentes criminais, entre outros documentos exigidos pelas autoridades portuguesas. Meu objetivo é garantir que todos os requisitos legais sejam atendidos, minimizando possíveis atrasos ou complicações no processo.</p>
+                            <p class="lead fs-6">Na minha função, eu realizo uma série de atividades que visam facilitar o processo de obtenção da cidadania portuguesa para nossos clientes. Uma das minhas principais responsabilidades é conduzir pesquisas genealógicas detalhadas. Isso envolve investigar e confirmar a elegibilidade dos clientes para a cidadania portuguesa com base em suas origens familiares. Utilizo diversos recursos e bancos de dados para rastrear documentos históricos e estabelecer as conexões necessárias.</p>
+                            
 
                             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
                                 <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Fale Comigo</button>
