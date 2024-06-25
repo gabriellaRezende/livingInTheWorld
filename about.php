@@ -24,6 +24,10 @@
         margin-top: 80px;
         margin-bottom: 80px;
     }
+
+    .bi{
+        color: red;
+    }
     </style>
 </head>
 
@@ -41,17 +45,18 @@
     <div id="carouselExample" class="carousel slide">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <div class="container col-lg-8 px-4" style="background-color: var(--cor-Bgcomponente);">
-                    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-                        <div class="col-10 col-sm-8 col-lg-6">
-                            <img src="bootstrap-themes.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+            <div class="container col-lg-8 px-4 rounded-2" style="background-color: var(--cor-Bgcomponente);">
+                    <div class="row flex-lg-row-reverse align-items-center">
+                        <div class="col-12 col-lg-6 pt-3">
+                            <img src="./images/Irmã_velha_matos-removebg-preview.png" class="d-block mx-lg-auto img-fluid prof-img" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
                         </div>
                         <div class="col-lg-6">
-                            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Responsive left-aligned hero with image</h1>
-                            <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Nome da Pessoa, 27 anos</h1>
+                            <p class="lead fs-6">Na minha função, eu realizo uma série de atividades que visam facilitar o processo de obtenção da cidadania portuguesa para nossos clientes. Uma das minhas principais responsabilidades é conduzir pesquisas genealógicas detalhadas. Isso envolve investigar e confirmar a elegibilidade dos clientes para a cidadania portuguesa com base em suas origens familiares. Utilizo diversos recursos e bancos de dados para rastrear documentos históricos e estabelecer as conexões necessárias.</p>
+                            
+
                             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                                <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
-                                <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+                                <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Fale Comigo</button>
                             </div>
                         </div>
                     </div>
@@ -76,13 +81,11 @@
                 </div>
             </div>
         </div>
-        <button class="carousel-control-prev " type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
+        <button class="carousel-control-prev "  type="button"  data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true" " ></span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
         </button>
 
     </div>

@@ -13,6 +13,10 @@
 
 <style> 
 
+body{
+    background-image: url(./images/bg\ login.png);
+    background-repeat: no-repeat;
+}
 
 </style>
 
@@ -21,10 +25,9 @@
     <form>
         <div class="container">
             <div class="row">
-                <div class="col-lg-3"></div>
                 <div class="col-12 col-lg-6">
-                    <h5 class="">Login</h5>
                     <div class="card">
+                    <h5 class="">Login</h5>
                         <div class="card-body">
                             <input name="username" type="text" class="form-control mb-2" id="username" placeholder="Login" required value="<?php  ?>">
                             <input name="pwd" type="password" class="form-control mb-2" id="pwd" placeholder="Password" required value="<?php ?>">
