@@ -18,23 +18,23 @@ body{
     background-repeat: no-repeat;
 }
 
+
 </style>
 
 
 <body>
     <form>
-        <div class="container">
+        <div class="container log">
             <div class="row">
                 <div class="col-12 col-lg-6">
-                    <div class="card">
+                    <div class="card align-items-center">
                     <h5 class="">Login</h5>
-                        <div class="card-body">
+                        <div class="card-body d-flex row p-0 m-3 align-items-center">
                             <input name="username" type="text" class="form-control mb-2" id="username" placeholder="Login" required value="<?php  ?>">
                             <input name="pwd" type="password" class="form-control mb-2" id="pwd" placeholder="Password" required value="<?php ?>">
-                            <a href="#" class="btn btn-primary col-3 m-3">Login</a>
-                            <div class="d-flex justify-content-between">
-                                <p class="card-text">Don't have login? <a href="#"> Signup</a>.</p>
-                            </div>
+                            <a href="#" class="btn btn-primary">Login</a>
+                            <p class="card-text">Não possui login? <a href="#"> Cadastre-se</a>.</p>
+                            
                         </div>
 
 
