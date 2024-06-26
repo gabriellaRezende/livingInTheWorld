@@ -37,9 +37,69 @@
                     </div>
 
                     <!-- One "tab" for each step in the form: -->
-                    <div class="tab">Name:
-                        <p><input placeholder="First name..." oninput="this.className = ''"></p>
-                        <p><input placeholder="Last name..." oninput="this.className = ''"></p>
+                    <div class="form-group">
+                        Name Completo*
+                        <input type="text" class="form-control" placeholder="" >
+                    </div>
+
+                    <div class="form-group tab">
+                        Gênero*
+                        <select class="form-select " aria-label="Default select example" oninput="this.className = ''">
+                                        <option selected>--</option>
+                                        <option value="1">Masculino</option>
+                                        <option value="2">Feminino</option>
+                                        <option value="3">Prefiro não</option>
+                                    </select>
+                    </div>
+
+                    <div class="form-group">
+                        Data de Nascimento*
+                        <input type="date" class="form-control" placeholder="" aria-label="Last name" oninput="this.className = ''">
+                    </div>
+
+                    <div class="form-group tab">
+                        Local de Nascimento*
+                        <input type="text" class="form-control" placeholder="" oninput="this.className = ''">
+                    </div>
+
+                    <div class="form-group tab">
+                        País de Nascimento*
+                        <input type="text" class="form-control" placeholder="" oninput="this.className = ''">
+                    </div>
+
+                    <div class="form-group tab">
+                        Name do Pai*
+                        <input type="text" class="form-control" placeholder="" oninput="this.className = ''">
+                    </div>
+
+                    <div class="form-group tab">
+                        Name da Mãe*
+                        <input type="text" class="form-control" placeholder="" oninput="this.className = ''">
+                    </div>
+
+                    <div class="form-group tab">
+                        N° de Identificação Nacional
+                        <input type="text" class="form-control" placeholder="CPF/Identidade/Habilitação" oninput="this.className = ''">
+                    </div>
+
+                    <div class="form-group tab">
+                        Name Completo
+                        <input type="text" class="form-control" placeholder="" oninput="this.className = ''">
+                    </div>
+
+                    <div class="form-group tab">
+                        Name Completo
+                        <input type="text" class="form-control" placeholder="" oninput="this.className = ''">
+                    </div>
+
+                    <div class="form-group tab">
+                        Name Completo
+                        <input type="text" class="form-control" placeholder="" oninput="this.className = ''">
+                    </div>
+
+                    <div class="form-group tab">
+                        Name Completo
+                        <input type="text" class="form-control" placeholder="" oninput="this.className = ''">
                     </div>
 
                     <div class="tab">Contact Info:
@@ -65,51 +125,8 @@
                         </div>
                     </div>
 
-                    <!-- Circles which indicates the steps of the form: -->
-                    <div style="text-align:center;margin-top:40px;">
-                        <span class="step"></span>
-                        <span class="step"></span>
-                        <span class="step"></span>
-                        <span class="step"></span>
-                    </div>
-
                 </form>
 
-                <form action="" method="post">
-                    <div id="step_1" class="step">
-                        <div class="form-group">
-                            <label for="nome">Nome:</label>
-                            <input type="text" name="nome" id="nome" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email:</label>
-                            <input type="email" name="email" id="email" class="form-control">
-                        </div>
-                    </div>
-                    <div id="step_2" class="step">
-                        <div class="form-group">
-                            <label for="end">Endereço:</label>
-                            <input type="text" name="end" id="end" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label for="fone">Telefone:</label>
-                            <input type="tel" name="fone" id="fone" class="form-control">
-                        </div>
-                    </div>
-                    <div id="step_3" class="step">
-                        <div class="form-group">
-                            <label for="cep">CEP:</label>
-                            <input type="text" name="cep" id="cep" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label for="bairro">Bairro:</label>
-                            <input type="text" name="bairro" id="bairro" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" class="btn btn-sm btn-primary">Enviar</button>
-                        </div>
-                    </div>
-                </form>
             </div>
         </div>
         <div class="row">
