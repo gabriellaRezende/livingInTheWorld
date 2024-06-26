@@ -33,7 +33,7 @@ body{
                             <input name="username" type="text" class="form-control mb-2" id="username" placeholder="Login" required value="<?php  ?>">
                             <input name="pwd" type="password" class="form-control mb-2" id="pwd" placeholder="Password" required value="<?php ?>">
                             <a href="#" class="btn btn-primary">Login</a>
-                            <p class="card-text">Não possui login? <a href="#"> Cadastre-se</a>.</p>
+                            <p class="card-text">Não possui login? <a href="singup.php"> Cadastre-se</a>.</p>
                             
                         </div>
 
