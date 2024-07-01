@@ -1,5 +1,18 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<?php
+
+session_start(); // Iniciar a sessão
+
+// Incluir o arquivo com conexão ao banco de dados
+include_once './conexao.php';
+
+// Verificar se está criada a sessão para controlar as etapas
+if (!isset($_SESSION['etapa'])) {
+
+    // Criar a sessão para armazenar a etapa
+    $_SESSION['etapa'] = 1;
+}
+//$_SESSION['etapa'] = 1;
+?>
 
 <head>
     <meta charset="UTF-8">

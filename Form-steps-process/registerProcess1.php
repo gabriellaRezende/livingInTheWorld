@@ -1,3 +1,21 @@
+<?php
+
+session_start(); // Iniciar a sessão
+
+// Incluir o arquivo com conexão ao banco de dados
+include_once './conexao.php';
+
+// Verificar se está criada a sessão para controlar as etapas
+if (!isset($_SESSION['etapa'])) {
+
+    // Criar a sessão para armazenar a etapa
+    $_SESSION['etapa'] = 1;
+}
+
+?>
+
+
+
 <!doctype html>
 <html lang="en">
 

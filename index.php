@@ -1,7 +1,8 @@
-<php?>
+<?php
 
+session_start();
 
-</php>
+?>
 
 
 <!doctype html>
