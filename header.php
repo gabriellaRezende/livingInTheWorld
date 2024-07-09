@@ -1,6 +1,6 @@
   
   
-  <nav class="shadow-sm navbar navbar-expand-lg fixed-top mb-5" style="background-color: var(--cor-Bgcomponente)" ;>
+  <nav class="shadow-sm navbar navbar-expand-lg" style="background-color: var(--cor-Bgcomponente)" ;>
     <div class="container-fluid" style="">
       <a class="navbar-brand me-4" href="#">
         <img src="./images/logo CR.svg" alt="Cidadania Matos" width="30" height="30">
@@ -42,13 +42,5 @@
         </div>
       </div>
     </div>
-  </nav>
-
-
-  <nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="#">Home</a></li>
-      <li class="breadcrumb-item"><a href="#">Library</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Data</li>
-    </ol>
+    
   </nav>

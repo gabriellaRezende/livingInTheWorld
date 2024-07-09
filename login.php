@@ -30,9 +30,9 @@ body{
                     <div class="card align-items-center">
                     <h5 class="">Login</h5>
                         <div class="card-body d-flex row p-0 m-3 align-items-center">
-                            <input name="username" type="text" class="form-control mb-2" id="username" placeholder="Login" required value="<?php  ?>">
-                            <input name="pwd" type="password" class="form-control mb-2" id="pwd" placeholder="Password" required value="<?php ?>">
-                            <a href="#" class="btn btn-primary">Login</a>
+                            <input name="email" type="text" class="form-control mb-2" id="username" placeholder="Login" required value="<?php  ?>">
+                            <input name="psw" type="password" class="form-control mb-2" id="pwd" placeholder="Password" required value="<?php ?>">
+                            <button type="submit" name="login" class="btn btn-primary">Login</button>
                             <p class="card-text">Não possui login? <a href="singup.php"> Cadastre-se</a>.</p>
                             
                         </div>

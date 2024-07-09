@@ -15,4 +15,3 @@
     </div>
   
   </footer>
-</div>
