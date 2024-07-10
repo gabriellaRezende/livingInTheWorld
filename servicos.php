@@ -64,6 +64,12 @@ $description_doc = $servico_doc['catdesc'];
             border-radius: 50px;
             background-color: #28306E;
         }
+
+        .bred {
+            background-color: #FCF7F2;
+            padding-top: 20px;
+            padding-left: 20px;
+        }
     </style>
 
 </head>
@@ -71,6 +77,13 @@ $description_doc = $servico_doc['catdesc'];
 <body>
     <!-- header -->
     <?php include "header.php"; ?>
+
+    <ol class="bred breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Library</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Data</li>
+    </ol>
+    </div>
 
 
     <div class="d-flex justify-content-between m-5">
@@ -154,20 +167,20 @@ $description_doc = $servico_doc['catdesc'];
                 $price = $servico_doc['price'];
             ?>
 
-            <div class="col">
-                <div class="row row-cols-1 row-cols-sm-2 g-4">
-                    <div class="col d-flex flex-column gap-2">
-                        <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-                            <i class="bi bi-2-circle"></i>
+                <div class="col">
+                    <div class="row row-cols-1 row-cols-sm-2 g-4">
+                        <div class="col d-flex flex-column gap-2">
+                            <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                                <i class="bi bi-2-circle"></i>
+                            </div>
+                            <h4 class="fw-semibold mb-0 text-body-emphasis"><?php echo $process; ?></h4>
+                            <p class="text-body-secondary"><?php echo $description_p; ?></p>
+                            <p class="text-body-secondary">a partir de <?php echo $price; ?> euros</p>
                         </div>
-                        <h4 class="fw-semibold mb-0 text-body-emphasis"><?php echo $process; ?></h4>
-                        <p class="text-body-secondary"><?php echo $description_p; ?></p>
-                        <p class="text-body-secondary">a partir de <?php echo $price; ?> euros</p>
+
+
                     </div>
-
-
                 </div>
-            </div>
             <?php } ?>
         </div>
     </div>
@@ -184,32 +197,29 @@ $description_doc = $servico_doc['catdesc'];
     <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
 
     <script>
-
-        $(document).ready(function(){
+        $(document).ready(function() {
             $('#cidadania').show();
             $('#visto').hide();
             $('#documentacao').hide();
         })
 
-        $('#btn_cid').click(function(){
+        $('#btn_cid').click(function() {
             $('#cidadania').show();
             $('#visto').hide();
             $('#documentacao').hide();
         });
 
-        $('#btn_vis').click(function(){
+        $('#btn_vis').click(function() {
             $('#cidadania').hide();
             $('#visto').show();
             $('#documentacao').hide();
         });
 
-        $('#btn_doc').click(function(){
+        $('#btn_doc').click(function() {
             $('#cidadania').hide();
             $('#visto').hide();
             $('#documentacao').show();
         });
-
-
     </script>
 
 </body>

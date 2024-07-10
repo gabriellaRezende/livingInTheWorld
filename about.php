@@ -25,8 +25,10 @@
         margin-bottom: 80px;
     }
 
-    .bi{
-        color: red;
+
+    .but{
+        background-color: #28306E;
+        border: #28306E;
     }
     </style>
 </head>
@@ -51,12 +53,14 @@
                             <img src="./images/Irmã_velha_matos-removebg-preview.png" class="d-block mx-lg-auto img-fluid prof-img" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
                         </div>
                         <div class="col-lg-6">
-                            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Nome da Pessoa, 27 anos</h1>
-                            <p class="lead fs-6">Na minha função, eu realizo uma série de atividades que visam facilitar o processo de obtenção da cidadania portuguesa para nossos clientes. Uma das minhas principais responsabilidades é conduzir pesquisas genealógicas detalhadas. Isso envolve investigar e confirmar a elegibilidade dos clientes para a cidadania portuguesa com base em suas origens familiares. Utilizo diversos recursos e bancos de dados para rastrear documentos históricos e estabelecer as conexões necessárias.</p>
+                            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Clara Matos, 41 anos</h1>
+                            <p class="display-5 fs-4 fw-bold text-body-emphasis lh-1 mb-3">Graduada em Direito pela Universidade do Porto, com especialização em direito internacional.</p>
+                            <p class="display-5 fs-4 text-body-emphasis lh-1 mb-3"> 18 anos de experiência em consultoria jurídica e processos de vistos </p>
+                            <p class="lead fs-6">Forneço consultoria especializada em documentação e legalização para nossos clientes, analisando cada caso individualmente e oferecendo soluções personalizadas para a obtenção de documentos necessários. Gerencio e acompanho processos de legalização de documentos, como certidões de nascimento, casamento e antecedentes criminais, preparando e revisando toda a documentação necessária para garantir que esteja em conformidade com as exigências das autoridades portuguesas. Além disso, participo de webinars e eventos online para educar o público sobre os processos de legalização de documentos.</p>
                             
 
                             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                                <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Fale Comigo</button>
+                                <button type="button" class=" but btn btn-primary btn-lg px-4 me-md-2">Fale Comigo</button>
                             </div>
                         </div>
                     </div>
@@ -69,12 +73,14 @@
                             <img src="./images/Irmã_nova_matos-removebgrop.png" class="d-block mx-lg-auto img-fluid prof-img" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
                         </div>
                         <div class="col-lg-6">
-                            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Nome da Pessoa, 27 anos</h1>
-                            <p class="lead fs-6">Na minha função, eu realizo uma série de atividades que visam facilitar o processo de obtenção da cidadania portuguesa para nossos clientes. Uma das minhas principais responsabilidades é conduzir pesquisas genealógicas detalhadas. Isso envolve investigar e confirmar a elegibilidade dos clientes para a cidadania portuguesa com base em suas origens familiares. Utilizo diversos recursos e bancos de dados para rastrear documentos históricos e estabelecer as conexões necessárias.</p>
+                            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Ana Matos, 32 anos</h1>
+                            <p class="display-5 fs-4 fw-bold text-body-emphasis lh-1 mb-3">Graduada em Direito pela Universidade de Lisboa</p>
+                            <p class="display-5 fs-4 text-body-emphasis lh-1 mb-3"> 10 anos de experiencia em processos de imigração e naturalização. </p>
+                            <p class="lead fs-6">Meu trabalho envolve fornecer consultoria especializada para pessoas que desejam imigrar para Portugal ou obter a cidadania portuguesa. Analiso cada caso individualmente e ofereço soluções personalizadas para atender às necessidades específicas de cada cliente. Gerencio e acompanho todos os processos de imigração, incluindo vistos de residência, trabalho e estudo, preparando e revisando toda a documentação necessária para garantir que tudo esteja em conformidade com as exigências das autoridades portuguesas. Represento nossos clientes em processos administrativos e judiciais relacionados à imigração e me mantenho atualizada sobre as mudanças nas leis de imigração e cidadania em Portugal para oferecer o melhor serviço possível. Realizo reuniões presenciais e virtuais com nossos clientes para discutir suas necessidades e preocupações, oferecendo suporte contínuo durante todo o processo de imigração, garantindo que nossos clientes se sintam seguros e bem informados.</p>
                             
 
                             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                                <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Fale Comigo</button>
+                                <button type="button" class="but btn btn-primary btn-lg px-4 me-md-2">Fale Comigo</button>
                             </div>
                         </div>
                     </div>

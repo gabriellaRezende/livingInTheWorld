@@ -25,6 +25,7 @@ session_start();
   .bred{
     background-color: #FCF7F2;
     padding-top: 20px;
+    padding-left: 20px;
   }
 
   </style>
@@ -40,8 +41,6 @@ session_start();
   
     <ol class="bred breadcrumb">
       <li class="breadcrumb-item"><a href="#">Home</a></li>
-      <li class="breadcrumb-item"><a href="#">Library</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Data</li>
     </ol>
   </div>
 
