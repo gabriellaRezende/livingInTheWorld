@@ -48,28 +48,7 @@ session_start();
   <div class="body">
     
   <div> bla bla</div>
-  <div>bla bla bla</div>
-  <div>bla bla bla</div>
-  <div>bla bla bla</div>
-  <div>bla bla bla</div>
-  <div>bla bla bla</div>
-  <div>bla bla bla</div>
-  <div>bla bla bla</div>
-  <div>bla bla bla</div>
-  <div>bla bla bla</div>
-  <div>bla bla bla</div>
-  <div>bla bla bla</div>
-  <div>bla bla bla</div>
-  <div>bla bla bla</div>
-  <div>bla bla bla</div>
-  <div>bla bla bla</div>
-  <div>bla bla bla</div>
-  <div>bla bla bla</div>
-  <div>bla bla bla</div>
-  <div>bla bla bla</div>
-  <div>bla bla bla</div>
-  <div>bla bla bla</div>
-
+  
   </div>
 
   <!-- Footer -->
