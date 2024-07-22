@@ -9,12 +9,12 @@
             <img src="./images/logo CR.svg" alt="Cidadania Matos" width="30" height="30">
         </a>
         <ul class="nav col-md justify-content">
-            <li class="nav-item"><a href="servicos.php?section=cidadania" class="nav-link px-2" id="footer_cid">Cidadania</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2" id="footer_vis">Vistos</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2">Área do Cliente</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2">Contatos</a></li>
+            <li class="nav-item"><a href="servicos.php?section=cidadania" class="body16reg nav-link px-2" id="footer_cid">Cidadania</a></li>
+            <li class="nav-item"><a href="#" class="body16reg nav-link px-2" id="footer_vis">Vistos</a></li>
+            <li class="nav-item"><a href="#" class="body16reg nav-link px-2">Área do Cliente</a></li>
+            <li class="nav-item"><a href="#" class="body16reg nav-link px-2">Contatos</a></li>
         </ul>
-        <p class="mb-0 ">&copy; 2024 Company, Inc</p>
+        <p class="body16reg mb-0 ">&copy; 2024 Company, Inc</p>
     </div>
   
   </footer>

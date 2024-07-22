@@ -6,7 +6,7 @@ session_start();
 
 
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="utf-8">
@@ -17,16 +17,11 @@ session_start();
   <link rel="stylesheet" href="./CSS/styles.css">
 
   <style>
+    .body {
+      margin-top: 100px;
+    }
 
-  .body{
-    margin-top: 100px;
-  }
-
-  .bred{
-    background-color: #FCF7F2;
-    padding-top: 20px;
-    padding-left: 20px;
-  }
+    
 
   </style>
 
@@ -34,22 +29,20 @@ session_start();
 
 <body class="vh-100 d-flex flex-column justify-content-between">
   <!-- header -->
-   
+
   <div class="d-flex flex-column fixed-top mb-5">
-  <?php include "header.php"; ?>
-
-  
-    <ol class="bred breadcrumb">
-      <li class="breadcrumb-item"><a href="#">Home</a></li>
-    </ol>
+    <?php include "header.php"; ?>
   </div>
-
+  
+  <ol class="bred breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+  </ol>
 
   <div class="body">
-    
-  <div class="teste"> bla bla</div>
-  <div class=""> bla bla</div>
-  
+
+    <h1 class="D1">Teste </h1>
+
+
   </div>
 
   <!-- Footer -->
