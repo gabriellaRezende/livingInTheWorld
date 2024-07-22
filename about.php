@@ -16,6 +16,10 @@
                 flex-direction: column !important;
             }
 
+            .container{
+                margin: 16px;
+            }
+
             .col-lg-6 {
                 width: 100%;
                 padding: 0;
@@ -23,6 +27,7 @@
 
             .prof-img {
                 margin-bottom: 20px;
+                display: none;
             }
         }
 
@@ -69,13 +74,13 @@
             <div class="container col-lg-8 px-4 rounded-2 w-100" style="background-color: var(--cor-Bgcomponente);">
                     <div class="row flex-lg-row-reverse align-items-center">
                         <div class="col-12 col-lg-6 pt-3">
-                            <img src="./images/Irmã_velha_matos-removebg-preview.png" class="d-block mx-lg-auto img-fluid prof-img" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                            <img src="./images/Irmã_velha_matos-removebg-preview menor.png" class="d-block mx-lg-auto img-fluid prof-img d-none d-md-block" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
                         </div>
                         <div class="col-lg-6">
-                            <h1 class="D3 mb-3" >Clara Matos, 41 anos</h1>
-                            <p class="H3 mb-3">Graduada em Direito pela Universidade do Porto, com especialização em direito internacional.</p>
-                            <p class="H5 mb-3"> 18 anos de experiência em consultoria jurídica e processos de vistos </p>
-                            <p class="body20reg">Forneço consultoria especializada em documentação e legalização para nossos clientes, analisando cada caso individualmente e oferecendo soluções personalizadas para a obtenção de documentos necessários. Gerencio e acompanho processos de legalização de documentos, como certidões de nascimento, casamento e antecedentes criminais, preparando e revisando toda a documentação necessária para garantir que esteja em conformidade com as exigências das autoridades portuguesas. Além disso, participo de webinars e eventos online para educar o público sobre os processos de legalização de documentos.</p>
+                            <h1 class="D5 mb-3" >Clara Matos, 41 anos</h1>
+                            <p class="H5 mb-3">Graduada em Direito pela Universidade do Porto, com especialização em direito internacional.</p>
+                            <p class="H6 mb-3"> 18 anos de experiência em consultoria jurídica e processos de vistos </p>
+                            <p class="body16reg descri">Forneço consultoria especializada em documentação e legalização para nossos clientes, analisando cada caso individualmente e oferecendo soluções personalizadas para a obtenção de documentos necessários. Gerencio e acompanho processos de legalização de documentos, como certidões de nascimento, casamento e antecedentes criminais, preparando e revisando toda a documentação necessária para garantir que esteja em conformidade com as exigências das autoridades portuguesas. Além disso, participo de webinars e eventos online para educar o público sobre os processos de legalização de documentos.</p>
                             
 
                             <div class="d-grid gap-2 d-md-flex justify-content-md-start pb-4">
@@ -89,16 +94,16 @@
                 <div class="container col-lg-8 px-4 rounded-2 w-100" style="background-color: var(--cor-Bgcomponente);">
                     <div class="row flex-lg-row-reverse align-items-center">
                         <div class="col-12 col-lg-6 pt-3">
-                            <img src="./images/Irmã_nova_matos-removebgrop.png" class="d-block mx-lg-auto img-fluid prof-img" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                            <img src="./images/Irmã_nova_matos-removebgrop.png" class="d-block mx-lg-auto img-fluid prof-img d-none d-md-block" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
                         </div>
                         <div class="col-lg-6">
-                            <h1 class="D3 lh-1 mb-3">Ana Matos, 32 anos</h1>
-                            <p class="H3 lh-1 mb-3">Graduada em Direito pela Universidade de Lisboa</p>
-                            <p class="H5 lh-1 mb-3"> 10 anos de experiencia em processos de imigração e naturalização. </p>
-                            <p class="body20reg">Meu trabalho envolve fornecer consultoria especializada para pessoas que desejam imigrar para Portugal ou obter a cidadania portuguesa. Analiso cada caso individualmente e ofereço soluções personalizadas para atender às necessidades específicas de cada cliente. Gerencio e acompanho todos os processos de imigração, incluindo vistos de residência, trabalho e estudo, preparando e revisando toda a documentação necessária para garantir que tudo esteja em conformidade com as exigências das autoridades portuguesas. Represento nossos clientes em processos administrativos e judiciais relacionados à imigração e me mantenho atualizada sobre as mudanças nas leis de imigração e cidadania em Portugal para oferecer o melhor serviço possível. Realizo reuniões presenciais e virtuais com nossos clientes para discutir suas necessidades e preocupações, oferecendo suporte contínuo durante todo o processo de imigração, garantindo que nossos clientes se sintam seguros e bem informados.</p>
+                            <h1 class="D5 lh-1 mb-3">Ana Matos, 32 anos</h1>
+                            <p class="H5 lh-1 mb-3">Graduada em Direito pela Universidade de Lisboa</p>
+                            <p class="H6 lh-1 mb-3"> 10 anos de experiencia em processos de imigração e naturalização. </p>
+                            <p class="body16reg">Meu trabalho envolve fornecer consultoria especializada para pessoas que desejam imigrar para Portugal ou obter a cidadania portuguesa. Analiso cada caso individualmente e ofereço soluções personalizadas para atender às necessidades específicas de cada cliente. Gerencio e acompanho todos os processos de imigração, incluindo vistos de residência, trabalho e estudo, preparando e revisando toda a documentação necessária para garantir que tudo esteja em conformidade com as exigências das autoridades portuguesas. Represento nossos clientes em processos administrativos e judiciais relacionados à imigração e me mantenho atualizada sobre as mudanças nas leis de imigração e cidadania em Portugal para oferecer o melhor serviço possível. Realizo reuniões presenciais e virtuais com nossos clientes para discutir suas necessidades e preocupações, oferecendo suporte contínuo durante todo o processo de imigração, garantindo que nossos clientes se sintam seguros e bem informados.</p>
                             
 
-                            <div class="d-grid gap-2 d-md-flex justify-content-md-start pb-4">
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-start ">
                                 <button type="button" class="but btn btn-primary btn-lg px-4 me-md-2">Fale Comigo</button>
                             </div>
                         </div>
