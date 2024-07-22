@@ -65,10 +65,29 @@ $description_doc = $servico_doc['catdesc'];
             background-color: #28306E;
         }
 
-        .bred {
-            background-color: #FCF7F2;
-            padding-top: 20px;
-            padding-left: 20px;
+        .iniciar {
+            background-color: #28306E;
+            border: none;
+        }
+
+        .iniciar:hover {
+            background-color: #9E9E9E !important;
+        }
+
+        .tag {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            background-color: #28306E;
+            border-radius: 5px;
+            width: 48px;
+            height: 48px;
+        }
+
+        .tag i {
+            font-size: 24px;
+            color: white;
         }
     </style>
 
@@ -76,29 +95,29 @@ $description_doc = $servico_doc['catdesc'];
 
 <body>
     <!-- header -->
-    <?php include "header.php"; ?>
+    <div class="d-flex flex-column fixed-top mb-5">
+        <?php include "header.php"; ?>
+    </div>
 
     <ol class="bred breadcrumb">
-        <li class="breadcrumb-item"><a href="#">Home</a></li>
-        <li class="breadcrumb-item"><a href="#">Library</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Data</li>
+        <li class="breadcrumb-item"><a href="index.php" class="crumb1 body16md">Home</a></li>
+        <li class="breadcrumb-item"><a href="#" class="crumb2 body16md">Sobre Nós</a></li>
     </ol>
-    </div>
 
 
     <div class="d-flex justify-content-between m-5">
-        <a class="btn but" type="" id="btn_cid" href="#cidadania"> Cidadania</a>
-        <a class="btn but" type="" id="btn_vis" href="#visto"> Visto</a>
-        <a class="btn but" type="" id="btn_doc" href="#documentacao"> Documentação</a>
+        <a class="body16md btn but" type="" id="btn_cid" href="#cidadania"> Cidadania</a>
+        <a class="body16md btn but" type="" id="btn_vis" href="#visto"> Visto</a>
+        <a class="body16md btn but" type="" id="btn_doc" href="#documentacao"> Documentação</a>
     </div>
 
     <div class="container ">
 
         <div class="row row-cols-1 row-cols-md-2 align-items-md-start g-5" id="cidadania">
-            <div class="col d-flex flex-column align-items-start gap-2 pt-5">
-                <h2 class="fw-bold text-body-emphasis"><?php echo $categoria_cid; ?></h2>
-                <p class="text-body-secondary"><?php echo $description_cid; ?></p>
-                <a href="#" class="btn btn-primary btn-lg">Iniciar Processo</a>
+            <div class="col d-flex flex-column align-items-start gap-2 pt-5 w-40">
+                <h2 class="D3"><?php echo $categoria_cid; ?></h2>
+                <p class="H5"><?php echo $description_cid; ?></p>
+                <a href="#" class="body16md iniciar btn btn-primary btn-lg">Iniciar Processo</a>
             </div>
             <?php
             foreach ($result_cid as $servico_cid) {
@@ -111,12 +130,12 @@ $description_doc = $servico_doc['catdesc'];
                 <div class="col">
                     <div class="row row-cols-1 row-cols-sm-2 g-4">
                         <div class="col d-flex flex-column gap-2">
-                            <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                            <div class="tag">
                                 <i class="bi bi-2-circle"></i>
                             </div>
-                            <h4 class="fw-semibold mb-0 text-body-emphasis"><?php echo $process; ?></h4>
-                            <p class="text-body-secondary"><?php echo $description_p; ?></p>
-                            <p class="text-body-secondary">a partir de <?php echo $price; ?> euros</p>
+                            <h4 class="H4"><?php echo $process; ?></h4>
+                            <p class="body16md"><?php echo $description_p; ?></p>
+                            <p class="body16md">a partir de <?php echo $price; ?> euros</p>
                         </div>
                     </div>
                 </div>
@@ -126,9 +145,9 @@ $description_doc = $servico_doc['catdesc'];
 
         <div class="row row-cols-1 row-cols-md-2 align-items-md-start g-5" id="visto">
             <div class="col d-flex flex-column align-items-start gap-2 pt-5">
-                <h2 class="fw-bold text-body-emphasis"><?php echo $categoria_vis; ?></h2>
-                <p class="text-body-secondary"><?php echo $description_vis; ?></p>
-                <a href="#" class="btn btn-primary btn-lg">Iniciar Processo</a>
+                <h2 class="D3"><?php echo $categoria_vis; ?></h2>
+                <p class="H5"><?php echo $description_vis; ?></p>
+                <a href="#" class="body16md iniciar btn btn-primary btn-lg">Iniciar Processo</a>
             </div>
 
             <?php
@@ -144,9 +163,9 @@ $description_doc = $servico_doc['catdesc'];
                             <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
                                 <i class="bi bi-2-circle"></i>
                             </div>
-                            <h4 class="fw-semibold mb-0 text-body-emphasis"><?php echo $process; ?></h4>
-                            <p class="text-body-secondary"><?php echo $description_p; ?></p>
-                            <p class="text-body-secondary">a partir de <?php echo $price; ?> euros</p>
+                            <h4 class="H4"><?php echo $process; ?></h4>
+                            <p class="body16md"><?php echo $description_p; ?></p>
+                            <p class="body16md">a partir de <?php echo $price; ?> euros</p>
                         </div>
                     </div>
                 </div>
@@ -155,9 +174,9 @@ $description_doc = $servico_doc['catdesc'];
 
         <div class="row row-cols-1 row-cols-md-2 align-items-md-start g-5" id="documentacao">
             <div class="col d-flex flex-column align-items-start gap-2 pt-5">
-                <h2 class="fw-bold text-body-emphasis"><?php echo $categoria_doc; ?></h2>
-                <p class="text-body-secondary"><?php echo $description_doc; ?></p>
-                <a href="#" class="btn btn-primary btn-lg">Iniciar Processo</a>
+                <h2 class="D3"><?php echo $categoria_doc; ?></h2>
+                <p class="H5"><?php echo $description_doc; ?></p>
+                <a href="#" class="body16md iniciar btn btn-primary btn-lg">Iniciar Processo</a>
             </div>
 
             <?php
@@ -173,9 +192,9 @@ $description_doc = $servico_doc['catdesc'];
                             <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
                                 <i class="bi bi-2-circle"></i>
                             </div>
-                            <h4 class="fw-semibold mb-0 text-body-emphasis"><?php echo $process; ?></h4>
-                            <p class="text-body-secondary"><?php echo $description_p; ?></p>
-                            <p class="text-body-secondary">a partir de <?php echo $price; ?> euros</p>
+                            <h4 class="H4"><?php echo $process; ?></h4>
+                            <p class="body16md"><?php echo $description_p; ?></p>
+                            <p class="body16md">a partir de <?php echo $price; ?> euros</p>
                         </div>
 
 
