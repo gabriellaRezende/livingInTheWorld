@@ -53,7 +53,7 @@
                             <img src="./images/Irmã_velha_matos-removebg-preview.png" class="d-block mx-lg-auto img-fluid prof-img" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
                         </div>
                         <div class="col-lg-6">
-                            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Clara Matos, 41 anos</h1>
+                            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3" >Clara Matos, 41 anos</h1>
                             <p class="display-5 fs-4 fw-bold text-body-emphasis lh-1 mb-3">Graduada em Direito pela Universidade do Porto, com especialização em direito internacional.</p>
                             <p class="display-5 fs-4 text-body-emphasis lh-1 mb-3"> 18 anos de experiência em consultoria jurídica e processos de vistos </p>
                             <p class="lead fs-6">Forneço consultoria especializada em documentação e legalização para nossos clientes, analisando cada caso individualmente e oferecendo soluções personalizadas para a obtenção de documentos necessários. Gerencio e acompanho processos de legalização de documentos, como certidões de nascimento, casamento e antecedentes criminais, preparando e revisando toda a documentação necessária para garantir que esteja em conformidade com as exigências das autoridades portuguesas. Além disso, participo de webinars e eventos online para educar o público sobre os processos de legalização de documentos.</p>

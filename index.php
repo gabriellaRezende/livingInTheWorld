@@ -47,7 +47,8 @@ session_start();
 
   <div class="body">
     
-  <div> bla bla</div>
+  <div class="teste"> bla bla</div>
+  <div class=""> bla bla</div>
   
   </div>
 

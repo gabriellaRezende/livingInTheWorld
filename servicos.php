@@ -197,6 +197,18 @@ $description_doc = $servico_doc['catdesc'];
     <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
 
     <script>
+        /*const urlParams = new URLSearchParams(window.location.search);
+        const section = urlParams.get('section');
+        
+        if (section === 'cidadania') {
+            $('#cidadania').show();
+        } else if (section === 'visto') {
+            $('#visto').hide();
+        } else if (section === 'documentacao') {
+            $('#documentacao').hide();
+        }*/
+
+
         $(document).ready(function() {
             $('#cidadania').show();
             $('#visto').hide();

@@ -1,6 +1,4 @@
 
-
-
 :root {
     --cor-primaria: #28306E; 
     --cor-secundaria: #9E9E9E;
@@ -20,6 +18,137 @@
     --cor-semanticwarning: #FFC107;
     --cor-Bginterface: #FCF7F2;
     --cor-Bgcomponente: #FFFF;
+}
+
+/*--------------Display----------------------*/
+@font-face {
+    font-family: D6;
+    src: url(./fontes/Montserrat-Regular.ttf);
+    font-size: 40px;
+}
+
+@font-face {
+    font-family: D5;
+    src: url(./fontes/Montserrat-Regular.ttf);
+    font-size: 48px;
+}
+
+@font-face {
+    font-family: D4;
+    src: url(./fontes/Montserrat-Regular.ttf);
+    font-size: 56px;
+}
+
+@font-face {
+    font-family: D3;
+    src: url(./fontes/Montserrat-Regular.ttf);
+    font-size: 61px;
+}
+
+@font-face {
+    font-family: D2;
+    src: url(./fontes/Montserrat-Regular.ttf);
+    font-size: 72px;
+}
+
+@font-face {
+    font-family: D1;
+    src: url(./fontes/Montserrat-Regular.ttf);
+    font-size: 80px;
+}
+
+/*-------------Headline-----------------*/
+
+@font-face {
+    font-family: H6;
+    src: url(./fontes/Montserrat-Medium.ttf);
+    font-size: 16px;
+}
+
+@font-face {
+    font-family: H5;
+    src: url(./fontes/Montserrat-Medium.ttf);
+    font-size: 20px;
+}
+
+@font-face {
+    font-family: H4;
+    src: url(./fontes/Montserrat-Medium.ttf);
+    font-size: 24px;
+}
+
+@font-face {
+    font-family: H3;
+    src: url(./fontes/Montserrat-Medium.ttf);
+    font-size: 28px;
+}
+
+@font-face {
+    font-family: H2;
+    src: url(./fontes/Montserrat-Medium.ttf);
+    font-size: 32px;
+}
+
+@font-face {
+    font-family: H1;
+    src: url(./fontes/Montserrat-Medium.ttf);
+    font-size: 40px;
+}
+
+/*--------------Body----------------*/
+
+@font-face {
+    font-family: body12reg;
+    src: url(./fontes/Montserrat-Regular.ttf);
+    font-size: 12px;
+}
+
+@font-face {
+    font-family: body12reg;
+    src: url(./fontes/Montserrat-Regular.ttf);
+    font-size: 12px;
+}
+
+@font-face {
+    font-family: body14reg;
+    src: url(./fontes/Montserrat-Regular.ttf);
+    font-size: 14px;
+}
+
+@font-face {
+    font-family: body16reg;
+    src: url(./fontes/Montserrat-Regular.ttf);
+    font-size: 16px;
+}
+
+@font-face {
+    font-family: body20reg;
+    src: url(./fontes/Montserrat-Regular.ttf);
+    font-size: 20px;
+}
+
+@font-face {
+    font-family: body12md;
+    src: url(./fontes/Montserrat-Medium.ttf);
+    font-size: 12px;
+}
+
+@font-face {
+    font-family: body14md;
+    src: url(./fontes/Montserrat-Medium.ttf);
+    font-size: 14px;
+}
+
+@font-face {
+    font-family: body16md;
+    src: url(./fontes/Montserrat-Medium.ttf);
+    font-size: 16px;
+}
+
+@font-face {
+    font-family: body20md;
+    src: url(./fontes/Montserrat-Medium.ttf);
+    font-size: 20px;
 }
 
 body{
