@@ -1,3 +1,45 @@
+<?php
+$email = "";
+$pwd = "";
+$msg = "";
+$msgType = "";
+
+if (isset($_POST["submit"])) {
+    require("./connection.php");
+
+    $email = $_POST["usermail"];
+    $pwd = $_POST["userpsw"];
+
+    $query = "SELECT psw FROM user WHERE email = ?";
+    $stmt = mysqli_prepare($connection, $query);
+    mysqli_stmt_bind_param($stmt, "s", $email);
+    mysqli_stmt_execute($stmt);
+    $result = mysqli_stmt_get_result($stmt);
+
+    if (mysqli_num_rows($result) == 0) {
+        $msgType = "danger";
+        $msg = "Usuário não cadastrado.";
+    } else {
+        $row = mysqli_fetch_assoc($result);
+        $pwd_bd = $row["psw"];
+
+        if (md5($pwd) === $pwd_bd) {
+            header("Location: index.php");
+            exit();
+        } else {
+            $msgType = "danger";
+            $msg = "User ou email inválido.";
+        }
+    }
+}
+
+
+
+
+?>
+
+
+
 <!doctype html>
 <html lang="pt-BR">
 
@@ -14,12 +56,12 @@
             background-repeat: no-repeat;
         }
 
-        .btn{
+        .btn {
             background-color: #28306E;
             border: none;
         }
 
-        .btn:hover{
+        .btn:hover {
             background-color: #9E9E9E !important;
         }
 
@@ -32,11 +74,11 @@
             text-decoration: none;
         }
 
-        H5{
+        H5 {
             color: #28306E;
         }
 
-        label{
+        label {
             color: #263238;
         }
 
@@ -72,16 +114,19 @@
                     <div class="card align-items-center">
                         <!-- Título dentro do formulário para dispositivos móveis -->
                         <h5 class="D6 title-inside mt-3">Login</h5>
+                        <div class="mt-3 alert alert-<?php echo $msgType; ?>" role="alert">
+                            <?php echo $msg; ?>
+                        </div>
                         <div class="card-body d-flex row p-0 m-3 align-items-center">
-                        <div class="mb-2 p-0">
+                            <div class="mb-2 p-0">
                                 <label for="exampleInputEmail1" class="body16reg form-label mb-1">Email</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" name="mail" required value="<?php ?>" aria-describedby="emailHelp">
+                                <input type="email" class="form-control" id="usermail" name="usermail" required value="<?php ?>" aria-describedby="emailHelp">
                             </div>
                             <div class="mb-3 p-0">
                                 <label for="exampleInputEmail1" class="body16reg form-label">Senha</label>
-                                <input type="password" class="form-control" id="exampleInputEmail1" name="psw1" required value="<?php ?>" aria-describedby="emailHelp">
+                                <input type="password" class="form-control" id="userpsw" name="userpsw" required value="<?php ?>" aria-describedby="emailHelp">
                             </div>
-                            <button type="submit" name="login" class="body16md btn btn-primary">Login</button>
+                            <button type="submit" name="submit" class="body16md btn btn-primary">Login</button>
                             <p class="fraselog body12md card-text text-center mt-3">Não possui login? <a href="singup.php"> Cadastre-se</a>.</p>
                         </div>
                     </div>
