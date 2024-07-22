@@ -141,6 +141,18 @@
     margin-top: 70px;
 }
 
+.bred a{
+    text-decoration: none;
+}
+
+.crumb1{
+    color: #607D8B;
+}
+
+.crumb2{
+    color: #28306E;
+}
+
 body{
     background-color: var(--cor-Bginterface);
 }

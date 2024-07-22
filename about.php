@@ -51,6 +51,14 @@
         border: #28306E;
     }
 
+    H1{
+        color: #28306E;
+    }
+
+    p{
+        color: #28306E;
+    }
+
     </style>
 </head>
 
@@ -63,7 +71,8 @@
   </div>
   
   <ol class="bred breadcrumb">
-    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item"><a href="index.php" class="crumb1 body16md">Home</a></li>
+    <li class="breadcrumb-item"><a href="#" class="crumb2 body16md">Sobre Nós</a></li>
   </ol>
     
 

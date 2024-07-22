@@ -35,7 +35,7 @@ session_start();
   </div>
   
   <ol class="bred breadcrumb">
-    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item"><a href="#" class="body16md" style="color: #28306E;">Home</a></li>
   </ol>
 
   <div class="body">
