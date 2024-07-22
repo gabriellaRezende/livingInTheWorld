@@ -50,13 +50,12 @@ if (isset($_POST["cadastrar"])) {
 };
 
 
-
 ?>
 
 
 
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="utf-8">
@@ -65,89 +64,120 @@ if (isset($_POST["cadastrar"])) {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./CSS/styles.css">
+    <style>
+        body {
+            background-image: url(./images/bg\ login.png);
+            background-repeat: no-repeat;
+        }
 
+        .btn {
+            background-color: #28306E;
+            border: none;
+        }
+
+        .btn:hover {
+            background-color: #9E9E9E !important;
+        }
+
+        .fraselog {
+            color: #90A4AE;
+        }
+
+        .fraselog a {
+            color: #263238;
+            text-decoration: none;
+        }
+
+        H5{
+            color: #28306E;
+        }
+
+        label{
+            color: #263238;
+        }
+
+        @media (min-width: 768px) {
+            .title-outside {
+                display: block;
+            }
+
+            .title-inside {
+                display: none;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .title-outside {
+                display: none;
+            }
+
+            .title-inside {
+                display: block;
+            }
+        }
+    </style>
 </head>
 
-<style>
-    body {
-        background-image: url(./images/bg\ login.png);
-        background-repeat: no-repeat;
-    }
-</style>
-
-
-<body class="container-fluid">
-    <div class="w-100 d-flex flex-row justify-content-center">
-        <form class="mt-5 mb-5" method="post" enctype="multipart/form-data">
-            <div class="container log ">
-                <div class="row">
-                    <div class="col-12 col-lg-6">
-                        <div class="card align-items-center">
-                            <h5 class="">Signup</h5>
-                            <div class="alert alert-<?php echo $msgtype; ?>" role="alert" style="display:<?php echo $display; ?>">
-                                <?php echo $msg; ?>
+<body class="d-flex justify-content-center align-items-center">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-6">
+                <h5 class="D6 title-outside text-center mt-3">Signup</h5>
+                <form class="mt-3 mb-5" method="post" enctype="multipart/form-data">
+                    <div class="card align-items-center">
+                        <h5 class="D6 title-inside mt-3">Signup</h5>
+                        <div class="alert alert-<?php echo $msgtype; ?>" role="alert" style="display:<?php echo $display; ?>">
+                            <?php echo $msg; ?>
+                        </div>
+                        <div class="card-body d-flex row p-0 m-3 align-items-center">
+                            <div class="mb-2 p-0">
+                                <label for="exampleInputEmail1" class="body16reg form-label mb-1">Nome*</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1" name="nome" required value="<?php ?>" aria-describedby="emailHelp">
                             </div>
-                            <div class="card-body d-flex row p-0 m-3 align-items-center">
-                                <div class="mb-2 p-0">
-                                    <label for="exampleInputEmail1" class="form-label mb-1">Nome*</label>
-                                    <input type="text" class="form-control" id="exampleInputEmail1" name="nome" required value="<?php  ?>" aria-describedby="emailHelp">
-                                </div>
-                                <div class="mb-2 p-0">
-                                    <label for="exampleInputEmail1" class="form-label mb-1">Email*</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" name="mail" required value="<?php  ?>" aria-describedby="emailHelp">
-                                </div>
-                                <div class="row gap-3 ">
-                                    <div class="col p-0 mb-2">
-                                        <label for="exampleInputEmail1" class="form-label mb-1">Gênero</label>
-                                        <select class="form-select " name="genero" aria-label="Default select example">
-                                            <option selected>--</option>
-                                            <option value="1">Masculino</option>
-                                            <option value="2">Feminino</option>
-                                            <option value="3">Prefiro não</option>
-                                        </select>
-                                    </div>
-                                    <div class="col p-0 mb-2">
-                                        <label for="exampleInputEmail1" class="form-label mb-1">Data de Nascimento*</label>
-                                        <input type="date" class="form-control" placeholder="" name="dtnas" aria-label="Last name">
-                                    </div>
-                                </div>
-                                <div class="mb-2 p-0">
-
-
-                                </div>
-
-                                <div class="mb-3 p-0">
-                                    <label for="exampleInputEmail1" class="form-label">Endereço*</label>
-                                    <input type="text" class="form-control" id="exampleInputEmail1" name="endereco" required value="<?php  ?>" aria-describedby="emailHelp">
-                                </div>
-                                <div class="mb-3 p-0">
-                                    <label for="exampleInputEmail1" class="form-label">Cód. Postal*</label>
-                                    <input type="text" class="form-control" id="exampleInputEmail1" name="cod" required value="<?php  ?>" aria-describedby="emailHelp">
-                                </div>
-                                <div class="mb-3 p-0">
-                                    <label for="exampleInputEmail1" class="form-label">Senha*</label>
-                                    <input type="password" class="form-control" id="exampleInputEmail1" name="psw1" required value="<?php  ?>" aria-describedby="emailHelp">
-                                </div>
-
-                                <div class="mb-3 p-0">
-                                    <label for="exampleInputEmail1" class="form-label">Confirmar Senha*</label>
-                                    <input type="password" class="form-control" id="exampleInputEmail1" name="psw2" required value="<?php  ?>" aria-describedby="emailHelp">
-                                </div>
-
-                                <button type="submit" name="cadastrar" class="btn btn-primary">Cadastrar</button>
-                                <p class="card-text"> Já possui login? <a href="login.php"> Login</a>.</p>
-
+                            <div class="mb-2 p-0">
+                                <label for="exampleInputEmail1" class="body16reg form-label mb-1">Email*</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" name="mail" required value="<?php ?>" aria-describedby="emailHelp">
                             </div>
+                            <div class="row gap-3 ">
+                                <div class="col p-0 mb-2">
+                                    <label for="exampleInputEmail1" class="body16reg form-label mb-1">Gênero</label>
+                                    <select class="form-select " name="genero" aria-label="Default select example">
+                                        <option selected>--</option>
+                                        <option value="1">Masculino</option>
+                                        <option value="2">Feminino</option>
+                                        <option value="3">Prefiro não</option>
+                                    </select>
+                                </div>
+                                <div class="col p-0 mb-2">
+                                    <label for="exampleInputEmail1" class="body16reg form-label mb-1">Data de Nascimento*</label>
+                                    <input type="date" class="form-control" placeholder="" name="dtnas" aria-label="Last name">
+                                </div>
+                            </div>
+                            <div class="mb-2 p-0"></div>
+                            <div class="mb-3 p-0">
+                                <label for="exampleInputEmail1" class="body16reg form-label">Endereço*</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1" name="endereco" required value="<?php ?>" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3 p-0">
+                                <label for="exampleInputEmail1" class="body16reg form-label">Cód. Postal*</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1" name="cod" required value="<?php ?>" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3 p-0">
+                                <label for="exampleInputEmail1" class="body16reg form-label">Senha*</label>
+                                <input type="password" class="form-control" id="exampleInputEmail1" name="psw1" required value="<?php ?>" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3 p-0">
+                                <label for="exampleInputEmail1" class="body16reg form-label">Confirmar Senha*</label>
+                                <input type="password" class="form-control" id="exampleInputEmail1" name="psw2" required value="<?php ?>" aria-describedby="emailHelp">
+                            </div>
+                            <button type="submit" name="cadastrar" class="body16md btn btn-primary">Cadastrar</button>
+                            <p class="fraselog body12md card-text text-center mt-3"> Já possui login? <a href="login.php"> Login</a>.</p>
                         </div>
                     </div>
-
-
-                </div>
+                </form>
             </div>
-        </form>
+        </div>
     </div>
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
