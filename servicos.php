@@ -109,8 +109,8 @@ $description_doc = $servico_doc['catdesc'];
 
     <div class="container">
 
-        <div class="row align-items-start g-5" id="cidadania">
-            <div class="col-md-4 d-flex flex-column align-items-start gap-2 m-0 pt-5 w-100">
+        <div class="row align-items-start g-5 pt-5 mb-3" id="cidadania">
+            <div class="col-md-4 d-flex flex-column align-items-start gap-2 m-0 pt-0 w-100">
                 <h2 class="D3"><?php echo $categoria_cid; ?></h2>
                 <p class="H5"><?php echo $description_cid; ?></p>
                 <a href="#" class="body16md iniciar btn btn-primary btn-lg align-self-start">Iniciar Processo</a>
@@ -135,8 +135,8 @@ $description_doc = $servico_doc['catdesc'];
             </div>
         </div>
 
-        <div class="row align-items-start g-5" id="visto">
-            <div class="col-md-4 d-flex flex-column align-items-start gap-2 m-0 pt-5 w-100">
+        <div class="row align-items-start g-5 pt-5 mb-3" id="visto">
+            <div class="col-md-4 d-flex flex-column align-items-start gap-2 m-0 pt-0 w-100">
                 <h2 class="D3"><?php echo $categoria_vis; ?></h2>
                 <p class="H5"><?php echo $description_vis; ?></p>
                 <a href="#" class="body16md iniciar btn btn-primary btn-lg align-self-start">Iniciar Processo</a>
@@ -161,8 +161,8 @@ $description_doc = $servico_doc['catdesc'];
             </div>
         </div>
 
-        <div class="row align-items-start g-5" id="documentacao">
-            <div class="col-md-4 d-flex flex-column align-items-start gap-2 m-0 pt-5 w-100">
+        <div class="row align-items-start g-5 pt-5 mb-3" id="documentacao">
+            <div class="col-md-4 d-flex flex-column align-items-start gap-2 m-0 pt-0 w-100">
                 <h2 class="D3"><?php echo $categoria_doc; ?></h2>
                 <p class="H5"><?php echo $description_doc; ?></p>
                 <a href="#" class="body16md iniciar btn btn-primary btn-lg align-self-start">Iniciar Processo</a>
