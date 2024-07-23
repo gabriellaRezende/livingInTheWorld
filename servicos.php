@@ -2,11 +2,11 @@
 
 require 'connection.php';
 
-$query_cid = 'SELECT price, p.name processname, c.name catname, p.description processdesc, c.description catdesc FROM processo p, category c WHERE p.id_category = c.id_category AND c.id_category = 1';
+$query_cid = 'SELECT icon_svg, p.name processname, c.name catname, p.description processdesc, c.description catdesc FROM processo p, category c WHERE p.id_category = c.id_category AND c.id_category = 1';
 
-$query_vis = 'SELECT price, p.name processname, c.name catname, p.description processdesc, c.description catdesc FROM processo p, category c WHERE p.id_category = c.id_category AND c.id_category = 2';
+$query_vis = 'SELECT icon_svg, p.name processname, c.name catname, p.description processdesc, c.description catdesc FROM processo p, category c WHERE p.id_category = c.id_category AND c.id_category = 2';
 
-$query_doc = 'SELECT price, p.name processname, c.name catname, p.description processdesc, c.description catdesc FROM processo p, category c WHERE p.id_category = c.id_category AND c.id_category = 3';
+$query_doc = 'SELECT icon_svg, p.name processname, c.name catname, p.description processdesc, c.description catdesc FROM processo p, category c WHERE p.id_category = c.id_category AND c.id_category = 3';
 
 /*cidadania*/
 $result_cid = mysqli_query($connection, $query_cid);
@@ -83,10 +83,6 @@ $description_doc = $servico_doc['catdesc'];
             border-radius: 5px;
             width: 48px;
             height: 48px;
-        }
-
-        .tag i {
-            font-size: 24px;
             color: white;
         }
     </style>
@@ -105,102 +101,90 @@ $description_doc = $servico_doc['catdesc'];
     </ol>
 
 
-    <div class="d-flex justify-content-between m-5">
+    <div class="d-flex justify-content-between m-4">
         <a class="body16md btn but" type="" id="btn_cid" href="#cidadania"> Cidadania</a>
         <a class="body16md btn but" type="" id="btn_vis" href="#visto"> Visto</a>
         <a class="body16md btn but" type="" id="btn_doc" href="#documentacao"> Documentação</a>
     </div>
 
-    <div class="container ">
+    <div class="container">
 
-        <div class="row row-cols-1 row-cols-md-2 align-items-md-start g-5" id="cidadania">
-            <div class="col d-flex flex-column align-items-start gap-2 pt-5 w-40">
+        <div class="row align-items-start g-5" id="cidadania">
+            <div class="col-md-4 d-flex flex-column align-items-start gap-2 m-0 pt-5 w-100">
                 <h2 class="D3"><?php echo $categoria_cid; ?></h2>
                 <p class="H5"><?php echo $description_cid; ?></p>
-                <a href="#" class="body16md iniciar btn btn-primary btn-lg">Iniciar Processo</a>
+                <a href="#" class="body16md iniciar btn btn-primary btn-lg align-self-start">Iniciar Processo</a>
             </div>
-            <?php
-            foreach ($result_cid as $servico_cid) {
-
-                $process = $servico_cid['processname'];
-                $description_p = $servico_cid['processdesc'];
-                $price = $servico_cid['price'];
-
-            ?>
-                <div class="col">
-                    <div class="row row-cols-1 row-cols-sm-2 g-4">
+            <div class="col-md-8 w-100">
+                <div class="row row-cols-1 row-cols-sm-2 g-4">
+                    <?php
+                    foreach ($result_cid as $servico_cid) {
+                        $process = $servico_cid['processname'];
+                        $description_p = $servico_cid['processdesc'];
+                        $icon_svg = $servico_cid['icon_svg'];
+                    ?>
                         <div class="col d-flex flex-column gap-2">
                             <div class="tag">
-                                <i class="bi bi-2-circle"></i>
+                                <?php echo $icon_svg; ?>
                             </div>
                             <h4 class="H4"><?php echo $process; ?></h4>
                             <p class="body16md"><?php echo $description_p; ?></p>
-                            <p class="body16md">a partir de <?php echo $price; ?> euros</p>
                         </div>
-                    </div>
+                    <?php } ?>
                 </div>
-            <?php } ?>
+            </div>
         </div>
 
-
-        <div class="row row-cols-1 row-cols-md-2 align-items-md-start g-5" id="visto">
-            <div class="col d-flex flex-column align-items-start gap-2 pt-5">
+        <div class="row align-items-start g-5" id="visto">
+            <div class="col-md-4 d-flex flex-column align-items-start gap-2 m-0 pt-5 w-100">
                 <h2 class="D3"><?php echo $categoria_vis; ?></h2>
                 <p class="H5"><?php echo $description_vis; ?></p>
-                <a href="#" class="body16md iniciar btn btn-primary btn-lg">Iniciar Processo</a>
+                <a href="#" class="body16md iniciar btn btn-primary btn-lg align-self-start">Iniciar Processo</a>
             </div>
-
-            <?php
-            foreach ($result_vis as $servico_vis) {
-                $process = $servico_vis['processname'];
-                $description_p = $servico_vis['processdesc'];
-                $price = $servico_vis['price'];
-            ?>
-
-                <div class="col">
-                    <div class="row row-cols-1 row-cols-sm-2 g-4">
+            <div class="col-md-8 w-100">
+                <div class="row row-cols-1 row-cols-sm-2 g-4">
+                    <?php
+                    foreach ($result_vis as $servico_vis) {
+                        $process = $servico_vis['processname'];
+                        $description_p = $servico_vis['processdesc'];
+                        $icon_svg = $servico_vis['icon_svg'];
+                    ?>
                         <div class="col d-flex flex-column gap-2">
-                            <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-                                <i class="bi bi-2-circle"></i>
+                            <div class="tag">
+                                <?php echo $icon_svg; ?>
                             </div>
                             <h4 class="H4"><?php echo $process; ?></h4>
                             <p class="body16md"><?php echo $description_p; ?></p>
-                            <p class="body16md">a partir de <?php echo $price; ?> euros</p>
                         </div>
-                    </div>
+                    <?php } ?>
                 </div>
-            <?php } ?>
+            </div>
         </div>
 
-        <div class="row row-cols-1 row-cols-md-2 align-items-md-start g-5" id="documentacao">
-            <div class="col d-flex flex-column align-items-start gap-2 pt-5">
+        <div class="row align-items-start g-5" id="documentacao">
+            <div class="col-md-4 d-flex flex-column align-items-start gap-2 m-0 pt-5 w-100">
                 <h2 class="D3"><?php echo $categoria_doc; ?></h2>
                 <p class="H5"><?php echo $description_doc; ?></p>
-                <a href="#" class="body16md iniciar btn btn-primary btn-lg">Iniciar Processo</a>
+                <a href="#" class="body16md iniciar btn btn-primary btn-lg align-self-start">Iniciar Processo</a>
             </div>
-
-            <?php
-            foreach ($result_doc as $servico_doc) {
-                $process = $servico_doc['processname'];
-                $description_p = $servico_doc['processdesc'];
-                $price = $servico_doc['price'];
-            ?>
-
-                <div class="col">
-                    <div class="row row-cols-1 row-cols-sm-2 g-4">
+            <div class="col-md-8 w-100">
+                <div class="row row-cols-1 row-cols-sm-2 g-4">
+                    <?php
+                    foreach ($result_doc as $servico_doc) {
+                        $process = $servico_doc['processname'];
+                        $description_p = $servico_doc['processdesc'];
+                        $icon_svg = $servico_doc['icon_svg'];
+                    ?>
                         <div class="col d-flex flex-column gap-2">
-                            <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-                                <i class="bi bi-2-circle"></i>
+                            <div class="tag">
+                                <?php echo $icon_svg; ?>
                             </div>
                             <h4 class="H4"><?php echo $process; ?></h4>
                             <p class="body16md"><?php echo $description_p; ?></p>
-                            <p class="body16md">a partir de <?php echo $price; ?> euros</p>
                         </div>
-
-
-                    </div>
+                    <?php } ?>
                 </div>
-            <?php } ?>
+            </div>
         </div>
     </div>
 
