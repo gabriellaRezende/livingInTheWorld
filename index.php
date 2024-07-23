@@ -183,11 +183,11 @@ session_start();
       </div>
     </div>
 
-    <div class="container col-xxl-8 px-4 py-5 ">
-      <div class="row flex-lg-row-reverse align-items-center g-5 bg-white">
+    <div class="container col-xxl-8 mt-4 mb-4 bg-white ">
+      <div class="row flex-lg-row-reverse align-items-center">
         <div class="col-lg-6">
-          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Resposta Rápida, Processo Rápido</h1>
-          <p class="lead">Nossos feedbacks as requisições de processos demoram entre 1 a 2 dias úteis.</p>
+          <h1 class="D4 lh-base mb-3">Resposta Rápida, Processo Rápido</h1>
+          <p class="H4">Nossos feedbacks demoram entre 1 a 2 dias úteis.</p>
         </div>
         <div class="col-10 col-sm-8 col-lg-6">
           <img src="./images/stopwatch.svg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="200" height="200" loading="lazy">
