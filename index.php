@@ -72,7 +72,7 @@ session_start();
         display: none;
       }
       .faixa {
-        flex-direction: column;
+        flex-wrap: wrap;
         text-align: center;
      }
 
@@ -174,7 +174,7 @@ session_start();
       </div>
     </div>
 
-    <div class="faixa card-conteiner w-100 d-flex flex-row justify-content-between align-items-center">
+    <div class="faixa card-conteiner w-100 d-flex flex-row  justify-content-between align-items-center">
       <div>
         <h1 class="D1 ps-5">100% SEGURO</h1>
       </div>
@@ -183,14 +183,26 @@ session_start();
       </div>
     </div>
 
-    <div class="container col-xxl-8 mt-4 mb-4 bg-white ">
-      <div class="row flex-lg-row-reverse align-items-center">
+    <div class="container col-xxl-8 mt-4 mb-4 bg-white rounded p-3">
+      <div class="d-flex flex-wrap align-items-center">
         <div class="col-lg-6">
-          <h1 class="D4 lh-base mb-3">Resposta Rápida, Processo Rápido</h1>
-          <p class="H4">Nossos feedbacks demoram entre 1 a 2 dias úteis.</p>
+          <img src="./images/stopwatch.svg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="200" height="200" loading="lazy">
         </div>
         <div class="col-10 col-sm-8 col-lg-6">
-          <img src="./images/stopwatch.svg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="200" height="200" loading="lazy">
+          <h1 class="D4 mb-3">Resposta Rápida, Processo Rápido</h1>
+          <p class="H5">Nossos feedbacks demoram entre 1 a 2 dias úteis.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container col-xxl-8 mt-4 mb-4 bg-white rounded">
+      <div class="d-flex flex-wrap align-items-center p-3">
+        <div class="col-lg-6">
+          <h1 class="D6 mb-3">Acompanhamento 100% pelo portal do usuário</h1>
+          <p class="H5">Todas as informações sobre o seu processo fica registrado no portal do cliente para ser visualizado a qualquer hora.</p>
+        </div>
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img src="./images/display.svg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="200" height="200" loading="lazy">
         </div>
       </div>
     </div>
