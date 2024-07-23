@@ -39,8 +39,32 @@
         .accordion-button:active{
             background-color: #9E9E9E;
         }
-        
 
+        @media (max-width: 768px) {
+            .card-body {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .card-body .flex-fill {
+                margin-bottom: 20px;
+                text-align: center;
+            }
+
+            .form {
+                width: 100%;
+            }
+
+        .but {
+            background-color: #28306E;
+            border: none;
+            width: 100%;
+        }
+
+        .but:hover {
+            background-color: #9E9E9E !important;
+        }
+    }
     </style>
 </head>
 
