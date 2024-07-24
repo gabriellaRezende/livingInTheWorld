@@ -4,6 +4,7 @@ session_start();
 
 ?>
 
+<?php include 'breadcrumb.php'; ?>
 
 <!doctype html>
 <html lang="pt-BR">
@@ -109,9 +110,8 @@ session_start();
     <?php include "header.php"; ?>
   </div>
 
-  <ol class="bred breadcrumb">
-    <li class="breadcrumb-item"><a href="#" class="body16md" style="color: #28306E;">Home</a></li>
-  </ol>
+  <div class="bred"> <?php echo generateBreadcrumb(); ?> </div>
+
 
   <div class="body">
 

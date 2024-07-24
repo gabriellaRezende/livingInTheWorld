@@ -1,3 +1,6 @@
+
+<?php include 'breadcrumb.php'; ?>
+
 <!doctype html>
 <html lang="en">
 
@@ -72,12 +75,13 @@
 
 <body class="vh-100 d-flex flex-column justify-content-between align-itens-center">
 
-    <div>
-        <!-- header -->
-        <?php include "header.php"; ?>
-    </div>
+<div class="d-flex flex-column fixed-top mb-5">
+    <?php include "header.php"; ?>
+  </div>
 
+  <div class="bred"> <?php echo generateBreadcrumb(); ?> </div>
     <div class="">
+    
 
         <div class="card mb-5 mt-5 ms-5 me-5">
             <div class="card-body d-flex gap-3">

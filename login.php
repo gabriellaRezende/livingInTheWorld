@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 $email = "";
 $pwd = "";
 $msg = "";
@@ -24,6 +26,11 @@ if (isset($_POST["submit"])) {
         $pwd_bd = $row["psw"];
 
         if (md5($pwd) === $pwd_bd) {
+            // Definir variáveis de sessão
+            $_SESSION['loggedin'] = true;
+            $_SESSION['username'] = $email; // Ou outro identificador de usuário
+
+            // Redirecionar para a página inicial ou outra página
             header("Location: index.php");
             exit();
         } else {
